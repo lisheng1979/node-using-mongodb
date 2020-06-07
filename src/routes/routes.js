@@ -1,11 +1,11 @@
 import { addnewProduct,
         getProducts,
         getProductWithID
-} from '../controllers/controllers';
+} from '../controllers/controller';
 
 const routes = (app) => {
     app.route('/products')
-    
+
         .get(getProducts)   
 
         .post(addnewProduct);  
