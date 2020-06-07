@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { ProductSchema } from './../../test/module3/add_single.spec';
 
-cosnt Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 export const ProductSchema = new Schema({
     name: {
