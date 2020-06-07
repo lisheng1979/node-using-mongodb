@@ -8,10 +8,9 @@ const PORT = 4000;
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/productsdb", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true
 });
-var db = mongoose.connection;
-db.on("error", console.error.bind(console, "MongoDB connection error:"));
+
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
